@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 80rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #2E9AFF;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: flex-end;
+    padding-top: 5rem;
+}
+
+nav a {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    position: relative;
+}
+
+nav button {
+    padding: 10px 15px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+nav button:hover {
+    background: #2524246e;
+}
+
+nav button a {
+    color: #2E9AFF;
+}
+nav button a:hover {
+    color: #fff;
+}
+
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.affmine-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.affmine-content-1 {
+    width: 50%;
+}
+
+.affmine-content-2 {
+    width: 50%;
+}
+
+.img-logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cash-up {
+    width: 4rem;
+}
+
+.img-logo img {
+    width: 100%;
+}
+
+.img-logo h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.affmine-content-1 p {
+    color: #fff;
+    font-weight: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-left: 20px;
+}
+
+.affmine-content-1 button {
+    background: #fff;
+    color:  #2E9AFF;
+    border: none;
+    width: 100%;
+    margin-top: 2rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.affmine-content-1 button:hover {
+    background: #2524246e;
+}
+
+.affmine-content-1 a {
+    color:  #2E9AFF;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+.affmine-content-1 a:hover {
+    color: #fff;
+}
+
+.affmine-content-2 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: #111 1px 0 10px;
+    text-decoration: underline;
+}
+
+.condition{
+    margin-top: 2rem;
+}
+
+.condition p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.contact{
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact p,
+.contact a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+@media screen and (max-width: 576px) {
+    .none {
+        display: none;
+    }
+
+    nav {
+        padding-top: 1rem;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .affmine-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .affmine-content-1,
+    .affmine-content-2 {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 576.1px) and (max-width:976px) {
+    .affmine-content-1 h2 {
+        font-size: 1.5rem;
+    }
+}

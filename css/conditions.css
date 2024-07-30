@@ -1,0 +1,18 @@
+.condition{
+    width: 80%;
+    margin: 0 auto;
+}
+.condition h1{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+nav{
+    padding-top: 1rem;
+}
+.footer{
+    margin-top: 1rem;
+}
